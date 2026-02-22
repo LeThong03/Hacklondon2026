@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# PyCharm
+.idea/
+
+# Logs
+*.log
+
+# Mongo local files (if using local db files)
+data/
+dump/
+
+# Node (if frontend in same repo)
+node_modules/
+build/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -17,9 +17,11 @@ def create_app() -> Flask:
     from .routes.health import bp as health_bp
     from .routes.ibex_proxy import bp as ibex_bp
     from .routes.retrofit import bp as retrofit_bp
+    from .routes.analysis import bp as analysis_bp
+
 
     app.register_blueprint(health_bp, url_prefix="/api")
     app.register_blueprint(ibex_bp, url_prefix="/api")
     app.register_blueprint(retrofit_bp, url_prefix="/api")
-
+    app.register_blueprint(analysis_bp, url_prefix="/api")
     return app
